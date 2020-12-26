@@ -14,5 +14,5 @@
 + [DataBricks](https://databricks.com/blog/category/engineering)
 
 #### Research Blogs
-+[Google AI](https://ai.googleblog.com/)
-+[Facebook Research](https://research.fb.com/)
++ [Google AI](https://ai.googleblog.com/)
++ [Facebook Research](https://research.fb.com/)
