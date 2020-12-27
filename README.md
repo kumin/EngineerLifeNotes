@@ -1,5 +1,6 @@
 ## EngineerLife
 
+### Reading
 #### Tech Blogs
 + [Spotfify](https://engineering.atspotify.com/)
 + [Netflix](https://netflixtechblog.com/)
@@ -17,6 +18,11 @@
 + [Google AI](https://ai.googleblog.com/)
 + [Facebook Research](https://research.fb.com/)
 
+### Hand-on
 #### Experiment Platform (A/B Testing)
 Example 
 [From Spotify](https://engineering.atspotify.com/2020/10/29/spotifys-new-experimentation-platform-part-1/)
+
+### Programming Languages
+#### Golang
+##### Grpc API
