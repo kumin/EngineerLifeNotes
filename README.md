@@ -9,10 +9,14 @@
 ###
 + [Facebook](https://engineering.fb.com/)
 + [Twitter](https://blog.twitter.com/)
-+ [Quara](https://www.quora.com/q/quoraengineering)
++ [Quora](https://www.quora.com/q/quoraengineering)
 ###
 + [DataBricks](https://databricks.com/blog/category/engineering)
 
 #### Research Blogs
 + [Google AI](https://ai.googleblog.com/)
 + [Facebook Research](https://research.fb.com/)
+
+#### Experiment Platform (A/B Testing)
+Example 
+[From Spotify](https://engineering.atspotify.com/2020/10/29/spotifys-new-experimentation-platform-part-1/)
