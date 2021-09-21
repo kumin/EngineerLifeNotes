@@ -14,6 +14,8 @@
 + [Quora](https://www.quora.com/q/quoraengineering)
 ###
 + [DataBricks](https://databricks.com/blog/category/engineering)
+###
++ [Datascience](https://towardsdatascience.com/)
 
 #### Research Blogs
 + [Google AI](https://ai.googleblog.com/)
