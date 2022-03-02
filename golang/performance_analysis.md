@@ -15,11 +15,11 @@ go support profiling many information:
 
 We have three options to collect profile data:
 
-1. Using go test
+#### 1. Using go test and benchmark
 ```console
 go test -cpuprofile cpu.prof -memprofile mem.prof -bench .
 ```
-2. Using download from http
+#### 2. downloading from http
 
 Import package http/net/pprof to inject pprof's enpoint getting profiling data
 ```go
@@ -37,13 +37,10 @@ func init() {
 ```
 Download profiling data
 ```console
-pprof  -edgefraction 0 -nodefraction 0 -nodecount 100000 -call_tree true http://:8082/debug/pprof/profile![Uploading Screen Shot 2021-09-30 at 14.49.46.png…]()
-
+curl -sK -v http://localhost:8082/debug/pprof/profile > profile.out
 ```
-using **-edgefraction** and **-nodefaction** to set limited nodes and edges of profile graph
-**-call_tree** helps you to see recursive funtion call deeper
 
-3. Using pprof in your code
+#### 3. Using pprof library in your code
 
 Import package
 ```console
@@ -72,6 +69,13 @@ pprof -web pprof.samples.cpu.009.pb.gz
 ```console
 pprof -http :8080 pprof.samples.cpu.pb.gz
 ```
+```console
+pprof -edgefraction 0 -nodefraction 0 -nodecount 100000 -call_tree -http :8080 pprof.samples.cpu.pb.gz
+```
+using **-edgefraction** and **-nodefaction** to set limited nodes and edges of profile graph helps you to see recursive funtion call deeper.
+
+**-call_tree** seperate trees base on the context.
+
 Result
 ![Screen Shot 2021-09-30 at 14 47 23](https://user-images.githubusercontent.com/75965764/135410120-4530255a-c3c3-4e0f-9905-1544fc563fb8.png)
 Flame Graph
